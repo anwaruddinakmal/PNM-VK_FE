@@ -1,3 +1,6 @@
+<?php
+require_once '../backend/auth.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,9 +15,9 @@
       <h1>GALERI u-PUSTAKA PERPUSTAKAAN NEGARA MALAYSIA</h1>
     </div>
     <script>
-      document.body.style.backgroundImage = "url('../img/bg2.jpg')";
+      document.body.style.backgroundImage = "url('img/bg2.jpg')";
       setTimeout(() => {
-        window.location.href = "index.html"; // Replace with your target URL
+        window.location.href = "index.php"; // Replace with your target URL
       }, 5000);
     </script>
   </body>

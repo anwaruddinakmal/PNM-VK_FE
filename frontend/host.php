@@ -1,3 +1,7 @@
+<?php
+require_once '../backend/auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

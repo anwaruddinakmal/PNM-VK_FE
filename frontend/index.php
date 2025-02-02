@@ -1,3 +1,7 @@
+<?php
+require_once '../backend/auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,11 +17,11 @@
         <p class="txt-primary">
           Sila tekan mula untuk meneruskan<br>penggunaan VR
         </p>
-        <a href="call.html?room=test"><button class="btns btn-mula">Mula</button></a>
+        <a href="call.php"><button class="btns btn-mula">Mula</button></a>
       </div>
     </div>
     <script>
-      document.body.style.backgroundImage = "url('../img/bg-home-new.png')";
+      document.body.style.backgroundImage = "url('img/bg-home-new.png')";
     </script>
   </body>
 </html>

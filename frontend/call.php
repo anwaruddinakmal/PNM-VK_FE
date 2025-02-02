@@ -1,3 +1,6 @@
+<?php
+require_once '../backend/auth.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -94,7 +97,7 @@
         </tr>
       </table>
     </div>
-    <a href="end.html" onclick="refreshCall()"
+    <a href="end.php" onclick="refreshCall()"
       ><button class="btns btn-end">Tamat</button></a
     >
 
@@ -229,7 +232,7 @@
     </div>
 
     <script>
-      document.body.style.backgroundImage = "url('../img/bg2.jpg')";
+      document.body.style.backgroundImage = "url('img/bg2.jpg')";
 
       const buttons = document.querySelectorAll(".toggle-btn");
       buttons.forEach((button) => {
