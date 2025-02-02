@@ -37,8 +37,8 @@ if($_SESSION['username'] === 'adminvk'){
         </tr>
       </table>
       <div class="remote-container">
-        <video id="local-video" autoplay muted></video>
-        <video id="remote-video" autoplay></video>
+        <video id="local-video" class="blur-filter" autoplay muted></video>
+        <video id="remote-video" class="blur-filter" autoplay></video>
       </div>
       <br />
       <div style="text-align: left">
@@ -288,6 +288,9 @@ if($_SESSION['username'] === 'adminvk'){
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix"></script>
     <script src="app.js"></script>
+    <script src="blurFilter.js"></script>
   </body>
 </html>
