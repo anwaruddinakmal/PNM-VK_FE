@@ -37,8 +37,10 @@ if($_SESSION['username'] === 'adminvk'){
         </tr>
       </table>
       <div class="remote-container">
-        <video id="local-video" class="blur-filter" autoplay muted></video>
-        <video id="remote-video" class="blur-filter" autoplay></video>
+        <div class="video-container">
+          <video id="local-video" class="blur-filter" autoplay muted></video>
+        </div>
+        <video id="remote-video" autoplay></video>
       </div>
       <br />
       <div style="text-align: left">
@@ -273,7 +275,7 @@ if($_SESSION['username'] === 'adminvk'){
       }
 
       setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "index.php";
       }, 180000); // 3 minutes
     </script>
     <script src="res/peerjs.min.js"></script>
