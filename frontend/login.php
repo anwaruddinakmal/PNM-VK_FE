@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         
-        if($user == "adminvk"){
+        if($user['username'] === "adminvk"){
           header("Location: host.php"); // Redirect to a protected page.
           exit();
         }else{

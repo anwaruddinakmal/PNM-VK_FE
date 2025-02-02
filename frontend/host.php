@@ -1,5 +1,9 @@
 <?php
 require_once '../backend/auth.php';
+if($_SESSION['username'] === 'client'){
+  header("Location: index.php");
+  exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +70,7 @@ require_once '../backend/auth.php';
       crossorigin="anonymous"
     ></script>
     <script>
-      document.body.style.backgroundImage = "url('../img/bg2.jpg')";
+      document.body.style.backgroundImage = "url('img/bg2.jpg')";
     </script>
   </body>
 </html>

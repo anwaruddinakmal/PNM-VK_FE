@@ -1,5 +1,9 @@
 <?php
 require_once '../backend/auth.php';
+if($_SESSION['username'] === 'adminvk'){
+  header("Location: host.php");
+  exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
